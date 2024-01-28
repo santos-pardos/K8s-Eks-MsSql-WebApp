@@ -42,5 +42,5 @@ jobs:
           kubectl apply -f manifests/secret-app.yml
           kubectl apply -f manifests/deployment-sql.yml
           kubectl apply -f manifests/svc-app.yml
-          kubectl apply -f manifests/deployment-app.yml
+          kubectl apply -f manifests/deployment-app-v2.yml
      
