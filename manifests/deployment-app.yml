@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: aspnetapp
-        image: santospardos/sanvalero:aspnet-mssql-web
+        image: santospardos/sanvalero:aspnet-mssql-web-v1
         ports:
         - containerPort: 80
