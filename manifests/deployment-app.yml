@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: aspnetapp
   labels:
-    env: dev
+    env: web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      env: dev
+      env: web
   template:
     metadata:
       labels:
-        env: dev
+        env: web
     spec:
       containers:
       - name: aspnetapp
-        image: santospardos/sanvalero:aspnet-mssql-web-v1
+        image: santospardos/sanvalero:aspnet-mssql-web
         ports:
         - containerPort: 80

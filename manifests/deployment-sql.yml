@@ -1,7 +1,8 @@
-# Create the SQL Server deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app: mssql
   name: mssql-deployment
 spec:
   replicas: 1

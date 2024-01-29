@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: aspnetapp-svc
   labels:
-    env: dev
+    env: web
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    env: dev
+    env: web
